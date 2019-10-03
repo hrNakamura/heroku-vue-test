@@ -2,6 +2,8 @@ import express from 'express';
 // import socketIO from "socket.io";
 
 export default (app, http) => {
+  const port = process.env.PORT || 3000;
+  app.set('port', port);
   app.use(express.json());
   //
   app.get('/foo', (req, res) => {
