@@ -10,9 +10,9 @@ export default (app, http) => {
     res.json({ msg: 'Welcome to Vue.js and Express server' });
   });
   //
-  // app.post('/bar', (req, res) => {
-  //   res.json(req.body);
-  // });
+  app.post('/bar', (req, res) => {
+    res.json(req.body);
+  });
   // 
   // optional support for socket.io
   // 
