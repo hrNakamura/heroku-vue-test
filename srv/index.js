@@ -4,6 +4,10 @@ import express from 'express';
 export default (app, http) => {
   const port = process.env.PORT || 3000;
   app.set('port', port);
+
+  var ipfilter = require('express-ipfilter').IpFilter;
+  var ips = [['10.60.183.1', '10.60.183.255']];
+  app.use(ipfilter(ips, { mode: 'allow' }));
   app.use(express.json());
   //
   app.get('/foo', (req, res) => {
