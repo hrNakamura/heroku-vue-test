@@ -13,6 +13,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "express-ipfilter": "^1.1.0",
+    "ip": "^1.1.5",
     "vue": "^2.6.10"
   },
   "devDependencies": {
