@@ -11,7 +11,7 @@
     "start": "vue-cli-service express:run"
   },
   "dependencies": {
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-service": "^5.0.8",
     "core-js": "^2.6.5",
     "express-ipfilter": "^1.1.0",
     "ip": "^1.1.5",
